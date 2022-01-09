@@ -26,7 +26,7 @@ class UsersController extends Controller
         return ["Result" => "Operation Failed"];
     }
 
-    public function user(Request $req)
+    public function add_usr (Request $req)
     {
         $user = new Users;
         $user->name = $req->name;
